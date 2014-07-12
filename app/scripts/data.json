@@ -1,0 +1,874 @@
+{
+   "?xml": {
+      "@version": "1.0",
+      "@encoding": "utf-8"
+   },
+   "menustrip": {
+      "@key": "Vci.MosaicVivarium.Menu.Main",
+      "@orientation": "Horizontal",
+      "@width": "100%",
+      "@style": "Closed",
+      "@background-color": "#DD8C30",
+      "@text-color": "black",
+      "@menu-color": "#efefef",
+      "@menu-text-color": "black",
+      "@arrow-image": "~/vci_web/images/arrow-right.gif",
+      "@mode": "Click",
+      "menu": [
+         {
+            "@id": "Vci.MosaicVivarium.Menu.Animal",
+            "@text": "Animals",
+            "@privilege-id": "Vci.MosaicVivarium.Privilege.Menu.Animal",
+            "menu": [
+               {
+                  "@id": "Vci.MosaicVivarium.Menu.Animal.Mouse",
+                  "@text": "Animal Worksheet",
+                  "@href": "~/Vivarium/Animal/Animals2.aspx"
+               },
+               {
+                  "@id": "Vci.MosaicVivarium.Menu.Animal.AnimalHealthCases",
+                  "@text": "Health Cases",
+                  "@href": "~/Vivarium/Animal/AnimalHealthCases.aspx",
+                  "@privilege-id": "Vci.MosaicVivarium.Privilege.Health.Edit"
+               },
+               {
+                  "@id": "Vci.MosaicVivarium.Menu.Animal.Ordering",
+                  "@text": "Ordering",
+                  "@href": "~/Vivarium/Animal/AnimalOrdering.aspx",
+                  "@privilege-id": "Vci.MosaicVivarium.Privilege.Menu.Animal.Ordering"
+               },
+               {
+                  "@id": "Vci.MosaicVivarium.Menu.Animal.Receiving",
+                  "@text": "Receiving",
+                  "@href": "~/Vivarium/Animal/AnimalReceiving.aspx",
+                  "@privilege-id": "Vci.MosaicVivarium.Privilege.Menu.Animal.Receiving"
+               },
+               {
+                  "@id": "Vci.MosaicVivarium.Menu.Animal.Tailing",
+                  "@text": "Sample for Genotyping",
+                  "@href": "~/Vivarium/Animal/Animals2.aspx?PageMode=Tailing",
+                  "@privilege-id": "Vci.MosaicVivarium.Privilege.Menu.Animal.TagAndTail"
+               },
+               {
+                  "@id": "Vci.MosaicVivarium.Menu.Animal.Genotyping",
+                  "@text": "Genotyping",
+                  "@href": "~/Vivarium/Animal/Animals2.aspx?PageMode=Genotyping",
+                  "@privilege-id": "Vci.MosaicVivarium.Privilege.Menu.Animal.Genotyping"
+               },
+               {
+                  "@id": "Vci.MosaicVivarium.Menu.Animal.Sentinel",
+                  "@text": "Sentinels",
+                  "@privilege-id": "Vci.MosaicVivarium.Privilege.Animal.Sentinel",
+                  "menu": [
+                     {
+                        "@id": "Vci.MosaicVivarium.Menu.Animal.Sentinel.Worksheet",
+                        "@text": "Sentinel Worksheet",
+                        "@href": "~/Vivarium/Animal/Sentinels.aspx",
+                        "@privilege-id": "Vci.MosaicVivarium.Privilege.Animal.Sentinel"
+                     },
+                     {
+                        "@id": "Vci.MosaicVivarium.Menu.Animal.Sentinel.Report",
+                        "@text": "Sentinel Health Report",
+                        "@href": "~/Vivarium/Animal/SentinelHealthReport.aspx",
+                        "@privilege-id": "Vci.MosaicVivarium.Privilege.Animal.Sentinel"
+                     }
+                  ]
+               },
+               {
+                  "@id": "Vci.MosaicVivarium.Menu.Animal.Report",
+                  "@text": "Reports",
+                  "menu": [
+                     {
+                        "@id": "Vci.MosaicVivarium.Menu.Animal.CageHistory",
+                        "@text": "Animal Cage History",
+                        "@href": "~/Vivarium/Animal/CageHistory2.aspx"
+                     },
+                     {
+                        "@id": "Vci.MosaicVivarium.Menu.Animal.Report.Animal.Basic",
+                        "@text": "Perform Queries from all Animals",
+                        "@href": "~/Vivarium/Report3.aspx?MetaXmlKey=Vci.MosaicVivarium.MetaXml.Animal.Report.Basic&Title=Perform+Queries+from+all+Animals&ViewSet=Vci.MosaicVivarium.View.Animal.Report.Basic&FilterSet=Vci.MosaicVivarium.Filter.Animal.Report.Basic&TransformSet=Vci.MosaicVivarium.Transform.Animal.Report.Basic"
+                     },
+                     {
+                        "@id": "Vci.MosaicVivarium.Menu.Animal.Report.MatingProductivity",
+                        "@text": "Mating Productivity",
+                        "@href": "~/Vivarium/Report3.aspx?MetaXmlKey=Vci.MosaicVivarium.MetaXml.Animal.Report.MatingProductivity&Title=Mating+Productivity&ShowColonyList=True&LineGuidColumnId=VivanVivlineGuid&ViewSet=Vci.MosaicVivarium.View.Animal.Report.MatingProductivity&FilterSet=Vci.MosaicVivarium.Filter.Animal.Report.MatingProductivity"
+                     },
+                     {
+                        "@id": "Vci.MosaicVivarium.Menu.Animal.Report.MatingProductivity.ByParentGenotype",
+                        "@text": "Mating Productivity by Parent Genotype Pair",
+                        "@href": "~/Vivarium/Report3.aspx?MetaXmlKey=Vci.MosaicVivarium.MetaXml.Animal.Report.MatingProductivity.ByParentGenotype&Title=Mating+Productivity+by+Parent+Genotype+Pair&ShowColonyList=True&LineGuidColumnId=VivlineGuid&ViewSet=Vci.MosaicVivarium.View.Animal.Report.MatingProductivity.ByParentGenotype&FilterSet=Vci.MosaicVivarium.Filter.Animal.Report.MatingProductivity.ByParentGenotype"
+                     },
+                     {
+                        "@id": "Vci.MosaicVivarium.Menu.Animal.Report.ProgenyRatio",
+                        "@text": "Progeny Genotype Ratios",
+                        "@href": "~/Vivarium/Report3.aspx?MetaXmlKey=Vci.MosaicVivarium.MetaXml.Animal.Report.ProgenyRatio&Title=Progeny+Genotype+Ratios&ShowColonyList=True&LineGuidColumnId=VivanVivlineGuid&ViewSet=Vci.MosaicVivarium.View.Animal.Report.ProgenyRatio&FilterSet=Vci.MosaicVivarium.Filter.Animal.Report.ProgenyRatio"
+                     },
+                     {
+                        "@id": "Vci.MosaicVivarium.Menu.Animal.Report.ProgenyRatio.ByParentGenotype",
+                        "@text": "Progeny Genotype Ratios by Parent Genotype Pair",
+                        "@href": "~/Vivarium/Report3.aspx?MetaXmlKey=Vci.MosaicVivarium.MetaXml.Animal.Report.ProgenyRatio.ByParentGenotype&Title=Progeny+Genotype+Ratios+by+Parent+Genotype+Pair&ShowColonyList=True&LineGuidColumnId=VivlineGuid&ViewSet=Vci.MosaicVivarium.View.Animal.Report.ProgenyRatio.ByParentGenotype&FilterSet=Vci.MosaicVivarium.Filter.Animal.Report.ProgenyRatio.ByParentGenotype"
+                     },
+                     {
+                        "@id": "Vci.MosaicVivarium.Menu.Animal.Report.BirthDeath",
+                        "@text": "Animal Birth and Death Statistics",
+                        "@href": "~/Vivarium/Report3.aspx?MetaXmlKey=Vci.MosaicVivarium.MetaXml.Animal.Report.BirthDeath&Title=Animal+Birth/Death+Statistics&ViewSet=Vci.MosaicVivarium.View.Animal.Report.BirthDeath&FilterSet=Vci.MosaicVivarium.Filter.Animal.Report.BirthDeath&TransformSet=Vci.MosaicVivarium.Transform.Animal.Report.BirthDeath"
+                     },
+                     {
+                        "@id": "Vci.MosaicVivarium.Menu.Animal.Report.AnimalUseAtMaxSuffer",
+                        "@text": "Animal Use Statistics (at maximum suffer level)",
+                        "@href": "~/Vivarium/Report3.aspx?MetaXmlKey=Vci.MosaicVivarium.MetaXml.Animal.Report.AnimalUseAtMaxSuffer&Title=Animal+Use+Statistics+(at+maximum+suffer+level)&ViewSet=Vci.MosaicVivarium.View.Animal.Report.AnimalUseAtMaxSuffer&FilterSet=Vci.MosaicVivarium.Filter.Animal.Report.AnimalUseAtMaxSuffer&TransformSet=Vci.MosaicVivarium.Transform.Animal.Report.AnimalUseAtMaxSuffer"
+                     }
+                  ]
+               }
+            ]
+         },
+         {
+            "@id": "Vci.MosaicVivarium.Menu.Egg",
+            "@text": "Eggs",
+            "@privilege-id": "Vci.MosaicVivarium.Privilege.Menu.Egg",
+            "@boolean-setting-id": "Vci.MosaicVivarium.OviparousFeatures.Enable",
+            "menu": [
+               {
+                  "@id": "Vci.MosaicVivarium.Menu.Egg.MatingWorksheet",
+                  "@text": "Egg Mating Worksheet",
+                  "@href": "~/Vivarium/Egg/Matings.aspx",
+                  "@boolean-setting-id": "Vci.MosaicVivarium.OviparousFeatures.Enable"
+               },
+               {
+                  "@id": "Vci.MosaicVivarium.Menu.Egg.EggWorksheet",
+                  "@text": "Egg Worksheet",
+                  "@href": "~/Vivarium/Egg/Eggs.aspx",
+                  "@boolean-setting-id": "Vci.MosaicVivarium.OviparousFeatures.Enable"
+               },
+               {
+                  "@id": "Vci.MosaicVivarium.Menu.Egg.CreateEggCheckRecords",
+                  "@text": "Create Egg Check Records",
+                  "@href": "~/Vivarium/Egg/Eggs.aspx?Action=CreateEggCheckRecords",
+                  "@boolean-setting-id": "Vci.MosaicVivarium.OviparousFeatures.Enable"
+               },
+               {
+                  "@id": "Vci.MosaicVivarium.Menu.Egg.CollectEggs",
+                  "@text": "Collect Eggs",
+                  "@href": "~/Vivarium/Egg/Eggs.aspx?Action=CollectEggs",
+                  "@boolean-setting-id": "Vci.MosaicVivarium.OviparousFeatures.Enable"
+               },
+               {
+                  "@id": "Vci.MosaicVivarium.Menu.Egg.IncubateEggs",
+                  "@text": "Incubate (Set) Eggs",
+                  "@href": "~/Vivarium/Egg/Eggs.aspx?Action=IncubateEggs",
+                  "@boolean-setting-id": "Vci.MosaicVivarium.OviparousFeatures.Enable"
+               },
+               {
+                  "@id": "Vci.MosaicVivarium.Menu.Egg.CandleEggs",
+                  "@text": "Candle Eggs",
+                  "@href": "~/Vivarium/Egg/Eggs.aspx?Action=CandleEggs",
+                  "@boolean-setting-id": "Vci.MosaicVivarium.OviparousFeatures.Enable"
+               },
+               {
+                  "@id": "Vci.MosaicVivarium.Menu.Egg.HatchEggs",
+                  "@text": "Hatch Eggs",
+                  "@href": "~/Vivarium/Egg/Eggs.aspx?Action=HatchEggs",
+                  "@boolean-setting-id": "Vci.MosaicVivarium.OviparousFeatures.Enable"
+               }
+            ]
+         },
+         {
+            "@id": "Vci.MosaicVivarium.Menu.Cage",
+            "@text": "Cages",
+            "@privilege-id": "Vci.MosaicVivarium.Privilege.Menu.Cage",
+            "menu": [
+               {
+                  "@id": "Vci.MosaicVivarium.Menu.Cage.Technician",
+                  "@text": "Cage-Side Assistant",
+                  "@href": "~/Vivarium/MosaicTechnician.aspx"
+               },
+               {
+                  "@id": "Vci.MosaicVivarium.Menu.Housing.CheckOut",
+                  "@text": "Cage Check Out",
+                  "@href": "~/Vivarium/Housing/CheckOut.aspx",
+                  "@privilege-id": "Vci.MosaicVivarium.Privilege.Housing.CageCheckOut"
+               },
+               {
+                  "@id": "Vci.MosaicVivarium.Menu.Cage.Exam",
+                  "@text": "Perform Exam",
+                  "@href": "~/Vivarium/Exams/Entry.aspx"
+               }
+            ]
+         },
+         {
+            "@id": "Vci.MosaicVivarium.Menu.Mating",
+            "@text": "Matings",
+            "@privilege-id": "Vci.MosaicVivarium.Privilege.Menu.Mating",
+            "menu": [
+               {
+                  "@id": "Vci.MosaicVivarium.Menu.Mating.View",
+                  "@text": "Mating Worksheet",
+                  "@href": "~/Vivarium/Mating/Matings3.aspx"
+               },
+               {
+                  "@id": "Vci.MosaicVivarium.Menu.Mating.Request",
+                  "@text": "Requests",
+                  "@href": "~/Vivarium/Mating/Matings3.aspx?Mode=Request",
+                  "@privilege-id": "Vci.MosaicVivarium.Privilege.Mating.Request"
+               },
+               {
+                  "@id": "Vci.MosaicVivarium.Menu.Mating.Report",
+                  "@text": "Reports",
+                  "menu": [
+                     {
+                        "@id": "Vci.MosaicVivarium.Menu.Mating.Report.Pending",
+                        "@text": "Pending Mating Requests",
+                        "@href": "~/Vivarium/Report3.aspx?MetaXmlKey=Vci.MosaicVivarium.MetaXml.Mating.Report.Pending&Title=Pending+Mating+Requests&ViewSet=Vci.MosaicVivarium.View.Mating.Report.Pending&FilterSet=Vci.MosaicVivarium.Filter.Mating.Report.Pending"
+                     },
+                     {
+                        "@id": "Vci.MosaicVivarium.Menu.Mating.Report.StaleMatings2",
+                        "@text": "Active Matings with no Mice in the Cage",
+                        "@href": "~/Vivarium/Report3.aspx?MetaXmlKey=Vci.MosaicVivarium.MetaXml.Mating.Report.StaleMatings2&Title=Active+Matings+with+no+Mice+in+the+Cage&ViewSet=Vci.MosaicVivarium.View.Mating.Report.StaleMatings2&FilterSet=Vci.MosaicVivarium.Filter.Mating.Report.StaleMatings2"
+                     },
+                     {
+                        "@id": "Vci.MosaicVivarium.Menu.Mating.Report.StaleMatings",
+                        "@text": "Taken Down Matings with Mice in the Cage",
+                        "@href": "~/Vivarium/Report3.aspx?MetaXmlKey=Vci.MosaicVivarium.MetaXml.Mating.Report.StaleMatings&Title=Taken+Down+Matings+with+Mice+in+the+Cage&ViewSet=Vci.MosaicVivarium.View.Mating.Report.StaleMatings&FilterSet=Vci.MosaicVivarium.Filter.Mating.Report.StaleMatings"
+                     }
+                  ]
+               }
+            ]
+         },
+         {
+            "@id": "Vci.MosaicVivarium.Menu.Colony",
+            "@text": "Colonies",
+            "@privilege-id": "Vci.MosaicVivarium.Privilege.Menu.Colony",
+            "menu": [
+               {
+                  "@id": "Vci.MosaicVivarium.Menu.Colony.Line",
+                  "@text": "Colony Worksheet",
+                  "@href": "~/Vivarium/Colony/Colonies.aspx"
+               },
+               {
+                  "@id": "Vci.MosaicVivarium.Menu.Colony.Cryopreservation",
+                  "@text": "Colony Cryopreservation Summary",
+                  "@href": "~/Vivarium/Colony/ColonyCryopreservationSummary.aspx"
+               },
+               {
+                  "@id": "Vci.MosaicVivarium.Menu.Cryopreservation.Embryo",
+                  "@text": "Embryo Cryopreservation",
+                  "@href": "~/Vivarium/Report3.aspx?MetaXmlKey=Vci.MosaicVivarium.MetaXml.Cryopreservation.Report.Freezers&Title=Embryo+Cryopreservation&ViewSet=Vci.MosaicVivarium.View.Cryopreservation.Embryo&FilterSet=Vci.MosaicVivarium.Filter.Cryopreservation.Embryo",
+                  "@boolean-setting-id": "Vci.Mosaic.Debug.DevelopmentMode"
+               },
+               {
+                  "@id": "Vci.MosaicVivarium.Menu.Colony.Exam",
+                  "@text": "Exams",
+                  "@boolean-setting-id": "Vci.Mosaic.Test.Enable",
+                  "menu": [
+                     {
+                        "@id": "Vci.MosaicVivarium.Menu.Colony.Exam.Entry",
+                        "@text": "Exam Data Entry",
+                        "@href": "~/Vivarium/Exams/Entry.aspx",
+                        "@boolean-setting-id": "Vci.Mosaic.Test.Enable"
+                     },
+                     {
+                        "@id": "Vci.MosaicVivarium.Menu.Colony.Exam.Explorer",
+                        "@text": "Exam Explorer",
+                        "@href": "~/Vivarium/Exams/History.aspx",
+                        "@boolean-setting-id": "Vci.Mosaic.Test.Enable"
+                     },
+                     {
+                        "@id": "Vci.MosaicVivarium.Menu.Colony.Exam.Report",
+                        "@text": "Reports",
+                        "menu": [
+                           {
+                              "@id": "Vci.MosaicVivarium.Menu.Colony.Exam.Report.Count",
+                              "@text": "All Exam Counts",
+                              "@href": "~/Vivarium/Report3.aspx?MetaXmlKey=Vci.MosaicVivarium.MetaXml.Colony.Report.Exam.Count&Title=All+Exam+Counts&ViewSet=Vci.MosaicVivarium.View.Colony.Report.Exam.Count&FilterSet=Vci.MosaicVivarium.Filter.Colony.Report.Exam.Count&TransformSet=Vci.MosaicVivarium.Transform.Colony.Report.Exam.Count",
+                              "@boolean-setting-id": "Vci.Mosaic.Test.Enable"
+                           },
+                           {
+                              "@id": "Vci.MosaicVivarium.Menu.Colony.Exam.Report.Count.Animal",
+                              "@text": "Animal Exam Counts",
+                              "@href": "~/Vivarium/Report3.aspx?MetaXmlKey=Vci.MosaicVivarium.MetaXml.Colony.Report.Exam.Count.Animal&Title=Animal+Exam+Counts&ViewSet=Vci.MosaicVivarium.View.Colony.Report.Exam.Count.Animal&FilterSet=Vci.MosaicVivarium.Filter.Colony.Report.Exam.Count.Animal&TransformSet=Vci.MosaicVivarium.Transform.Colony.Report.Exam.Count.Animal",
+                              "@boolean-setting-id": "Vci.Mosaic.Test.Enable"
+                           },
+                           {
+                              "@id": "Vci.MosaicVivarium.Menu.Colony.Exam.Report.Detail",
+                              "@text": "Exam Details",
+                              "@href": "~/Vivarium/Phenotyping/ExamReportDetail.aspx",
+                              "@boolean-setting-id": "Vci.Mosaic.Test.Enable"
+                           }
+                        ]
+                     }
+                  ]
+               },
+               {
+                  "@id": "Vci.MosaicVivarium.Menu.Colony.Report",
+                  "@text": "Reports",
+                  "menu": [
+                     {
+                        "@id": "Vci.MosaicVivarium.Menu.Colony.Report.Statistics",
+                        "@text": "Colony Statistics",
+                        "@href": "~/Vivarium/Report3.aspx?MetaXmlKey=Vci.MosaicVivarium.MetaXml.Colony.Line&Title=Colony+Statistics&ViewSet=Vci.MosaicVivarium.View.Report2.Statistics.Colony&FilterSet=Vci.MosaicVivarium.Filter.Report2.Statistics.Colony&TransformSet=Vci.MosaicVivarium.Transform.Report2.Statistics.Colony"
+                     },
+                     {
+                        "@id": "Vci.MosaicVivarium.Menu.Colony.Report.Aging",
+                        "@text": "Colony Aging",
+                        "@href": "~/Vivarium/Report3.aspx?MetaXmlKey=Vci.MosaicVivarium.MetaXml.Colony.Report.Aging&Title=Colony+Aging&TransformSet=Vci.MosaicVivarium.Transform.Colony.Report.Aging&ViewSet=Vci.MosaicVivarium.View.Colony.Report.Aging&FilterSet=Vci.MosaicVivarium.Filter.Colony.Report.Aging"
+                     },
+                     {
+                        "@id": "Vci.MosaicVivarium.Menu.Colony.Report.CageDensity",
+                        "@text": "Colony Cage Density",
+                        "@href": "~/Vivarium/Report3.aspx?MetaXmlKey=Vci.MosaicVivarium.MetaXml.Colony.Report.CageDensity&Title=Colony+Cage+Density&TransformSet=Vci.MosaicVivarium.Transform.Colony.Report.CageDensity&FilterSet=Vci.MosaicVivarium.Filter.Colony.Report.CageDensity"
+                     },
+                     {
+                        "@id": "Vci.MosaicVivarium.Menu.Colony.Report.PrivilegeGrant",
+                        "@text": "Colony Privileges Granted",
+                        "@href": "~/Vivarium/Report3.aspx?MetaXmlKey=Vci.MosaicVivarium.MetaXml.Privilege.Report.Grant&Title=Privileges+Granted&ViewSet=Vci.MosaicVivarium.View.Privilege.Grant&ViewId=Vci.MosaicVivarium.View.Privilege.Grant.Colony&FilterSet=Vci.MosaicVivarium.Filter.Privilege.Grant&FilterId=Vci.MosaicVivarium.Filter.Privilege.Grant.Colony"
+                     },
+                     {
+                        "@id": "Vci.MosaicVivarium.Menu.Colony.Report.MutationGenotypeList",
+                        "@text": "Colony Mutations and Genotypes",
+                        "@href": "~/Vivarium/Report3.aspx?MetaXmlKey=Vci.MosaicVivarium.MetaXml.Colony.Report.MutationGenotypeList&Title=Colony+Mutations+and+Genotypes&ViewSet=Vci.MosaicVivarium.View.Colony.Report.MutationGenotypeList&FilterSet=Vci.MosaicVivarium.Filter.Colony.Report.MutationGenotypeList"
+                     }
+                  ]
+               }
+            ]
+         },
+         {
+            "@id": "Vci.MosaicVivarium.Menu.Housing",
+            "@text": "Housing",
+            "@privilege-id": "Vci.MosaicVivarium.Privilege.Menu.Housing",
+            "menu": [
+               {
+                  "@id": "Vci.MosaicVivarium.Menu.Housing.Cage",
+                  "@text": "Cage Cards",
+                  "@href": "~/Vivarium/Housing/CageCards.aspx"
+               },
+               {
+                  "@id": "Vci.MosaicVivarium.Menu.Housing.Edit",
+                  "@text": "Racks",
+                  "@href": "~/Vivarium/Housing/Racks.aspx",
+                  "@privilege-id": "Vci.MosaicVivarium.Privilege.Housing.Edit"
+               },
+               {
+                  "@id": "Vci.MosaicVivarium.Menu.Housing.Census",
+                  "@text": "Census",
+                  "@href": "~/Vivarium/Housing/Census.aspx",
+                  "@privilege-id": "Vci.MosaicVivarium.Privilege.Housing.Census"
+               },
+               {
+                  "@id": "Vci.MosaicVivarium.Menu.Housing.CageBilling",
+                  "@text": "Cage Billing",
+                  "@href": "~/Vivarium/Housing/CageBilling.aspx",
+                  "@privilege-id": "Vci.MosaicVivarium.Privilege.Housing.Billing.View"
+               },
+               {
+                  "@id": "Vci.MosaicVivarium.Menu.Housing.CageBillingDaily",
+                  "@text": "Cage Billing - Daily",
+                  "@href": "~/Vivarium/Housing/CageBilling.aspx?MetaXmlKey=Vci.MosaicVivarium.MetaXml.CageEvent.Billing.Daily.Grid&Title=Cage+Billing+-+Daily&ViewSet=Vci.MosaicVivarium.View.CageEvent.Billing.Daily.Grid&FilterSet=Vci.MosaicVivarium.Filter.CageEvent.Billing.Daily.Grid&TransformSet=Vci.MosaicVivarium.Transform.CageEvent.Billing.Daily.Grid",
+                  "@privilege-id": "Vci.MosaicVivarium.Privilege.Housing.Billing.View"
+               },
+               {
+                  "@id": "Vci.MosaicVivarium.Menu.Housing.CageBillingAdministration",
+                  "@text": "Cage Billing Maintenance",
+                  "@href": "~/Vivarium/Housing/CageBillingAdministration.aspx",
+                  "@privilege-id": "Vci.MosaicVivarium.Privilege.Housing.Billing.Admin"
+               },
+               {
+                  "@id": "Vci.MosaicVivarium.Menu.Housing.CageEventHistory",
+                  "@text": "Cage History",
+                  "@href": "~/Vivarium/Housing/CageEventHistory.aspx"
+               },
+               {
+                  "@id": "Vci.MosaicVivarium.Menu.Housing.Report",
+                  "@text": "Reports",
+                  "menu": [
+                     {
+                        "@id": "Vci.MosaicVivarium.Menu.Housing.Report.TallySheet",
+                        "@text": "Daily Tally Sheet",
+                        "@href": "~/Vivarium/Accounting/Report/TallySheetReport.aspx",
+                        "@privilege-id": "Vci.MosaicVivarium.Privilege.Housing.Billing.Admin"
+                     },
+                     {
+                        "@id": "Vci.MosaicVivarium.Menu.Housing.Report.Occupancy",
+                        "@text": "Housing Occupancy",
+                        "@href": "~/Vivarium/Report3.aspx?MetaXmlKey=Vci.MosaicVivarium.MetaXml.Statistics.Housing&Title=Housing+Occupancy&ViewSet=Vci.MosaicVivarium.View.Statistics.Housing&FilterSet=Vci.MosaicVivarium.Filter.Statistics.Housing"
+                     },
+                     {
+                        "@id": "Vci.MosaicVivarium.Menu.Housing.Report.Animal.Census",
+                        "@text": "Animal Census With Currently Assigned Protocol/Permit",
+                        "@href": "~/Vivarium/Housing/AnimalCensus.aspx?MetaXmlKey=Vci.MosaicVivarium.MetaXml.Animal.Report.Census&Title=Animal+Census+With+Currently+Assigned+Protocol/Permit&ViewSet=Vci.MosaicVivarium.View.Animal.Report.Census&FilterSet=Vci.MosaicVivarium.Filter.Animal.Report.Census&TransformSet=Vci.MosaicVivarium.Transform.Animal.Report.Census",
+                        "@privilege-id": "Vci.MosaicVivarium.Privilege.Housing.Billing.Admin"
+                     },
+                     {
+                        "@id": "Vci.MosaicVivarium.Menu.Housing.Report.Animal.CensusAtMaxPain",
+                        "@text": "Animal Census At Maximum Assigned Pain",
+                        "@href": "~/Vivarium/Housing/AnimalCensus.aspx?MetaXmlKey=Vci.MosaicVivarium.MetaXml.Animal.Report.CensusAtMaxPain&Title=Animal+Census+At+Maximum+Assigned+Pain&ViewSet=Vci.MosaicVivarium.View.Animal.Report.UseAtMaxPain&FilterSet=Vci.MosaicVivarium.Filter.Animal.Report.UseAtMaxPain&TransformSet=Vci.MosaicVivarium.Transform.Animal.Report.UseAtMaxPain",
+                        "@privilege-id": "Vci.MosaicVivarium.Privilege.Housing.Billing.Admin"
+                     },
+                     {
+                        "@id": "Vci.MosaicVivarium.Menu.Housing.Report.SiteCount",
+                        "@text": "Site Counts",
+                        "@href": "~/Vivarium/Report3.aspx?MetaXmlKey=Vci.MosaicVivarium.MetaXml.Statistics.Site&Title=Site+Statistics"
+                     },
+                     {
+                        "@id": "Vci.MosaicVivarium.Menu.Housing.Report.AnimalCount",
+                        "@text": "Live Animal Counts",
+                        "@href": "~/Vivarium/Report3.aspx?MetaXmlKey=Vci.MosaicVivarium.MetaXml.Housing.Report.AnimalCount&Title=Live+Animal+Counts&ViewSet=Vci.MosaicVivarium.View.Housing.Report.AnimalCount&FilterSet=Vci.MosaicVivarium.Filter.Housing.Report.AnimalCount&TransformSet=Vci.MosaicVivarium.Transform.Housing.Report.AnimalCount"
+                     },
+                     {
+                        "@id": "Vci.MosaicVivarium.Menu.Housing.Report.AnimalCount1",
+                        "@text": "Live Animal Counts Categorized",
+                        "@href": "~/Vivarium/Report3.aspx?MetaXmlKey=Vci.MosaicVivarium.MetaXml.Housing.Report.AnimalCount1&Title=Live+Animal+Counts+Categorized&ViewSet=Vci.MosaicVivarium.View.Housing.Report.AnimalCount1&FilterSet=Vci.MosaicVivarium.Filter.Housing.Report.AnimalCount1&TransformSet=Vci.MosaicVivarium.Transform.Housing.Report.AnimalCount1"
+                     }
+                  ]
+               }
+            ]
+         },
+         {
+            "@id": "Vci.MosaicVivarium.Menu.Administration",
+            "@text": "Administration",
+            "@privilege-id": "Vci.MosaicVivarium.Privilege.Menu.Administration",
+            "menu": [
+               {
+                  "@id": "Vci.MosaicVivarium.Menu.Administration.Security",
+                  "@text": "Security",
+                  "@privilege-id": "Vci.MosaicVivarium.Privilege.Menu.Administration",
+                  "menu": [
+                     {
+                        "@id": "Vci.MosaicVivarium.Menu.Administration.Personnel",
+                        "@text": "Personnel",
+                        "@href": "~/vci_web/admin/Personnel.aspx",
+                        "@privilege-id": "Vci.Mosaic.Privilege.Administration.Personnel"
+                     },
+                     {
+                        "@id": "Vci.MosaicVivarium.Menu.Administration.Credential",
+                        "@text": "Groups",
+                        "@href": "~/vci_web/admin/Credentials.aspx",
+                        "@privilege-id": "Vci.Mosaic.Privilege.Administration.Credential"
+                     },
+                     {
+                        "@id": "Vci.MosaicVivarium.Menu.Administration.Role",
+                        "@text": "Roles",
+                        "@href": "~/vci_web/admin/Roles.aspx",
+                        "@privilege-id": "Vci.Mosaic.Privilege.Administration.Role"
+                     },
+                     {
+                        "@id": "Vci.MosaicVivarium.Menu.Administration.Security.Reports",
+                        "@privilege-id": "Vci.Mosaic.Privilege.Administration.Credential",
+                        "@text": "Reports",
+                        "menu": [
+                           {
+                              "@id": "Vci.MosaicVivarium.Menu.Administration.Security.Reports.UserGroups",
+                              "@privilege-id": "Vci.Mosaic.Privilege.Administration.Credential",
+                              "@text": "User Credentials",
+                              "@href": "~/vci_web/admin/UserCredentials.aspx"
+                           },
+                           {
+                              "@id": "Vci.MosaicVivarium.Menu.Administration.Security.Reports.PrivilegeGrant",
+                              "@privilege-id": "Vci.Mosaic.Privilege.Administration.Credential",
+                              "@text": "Privileges Granted",
+                              "@href": "~/Vivarium/Report3.aspx?MetaXmlKey=Vci.MosaicVivarium.MetaXml.Privilege.Report.Grant&Title=Privileges+Granted&ViewSet=Vci.MosaicVivarium.View.Administration.Privilege.Grant&FilterSet=Vci.MosaicVivarium.Filter.Administration.Privilege.Grant"
+                           },
+                           {
+                              "@id": "Vci.MosaicVivarium.Menu.Administration.Security.Reports.EffectivePermissions",
+                              "@privilege-id": "Vci.Mosaic.Privilege.Administration.Credential",
+                              "@text": "Effective Permissions",
+                              "@href": "~/Vivarium/Report3.aspx?MetaXmlKey=Vci.Mosaic.MetaXml.VCorPersonPrivilege.Report&Title=Effective+Permissions&ViewSet=Vci.Mosaic.View.VCorPersonPrivilege.Report&FilterSet=Vci.Mosaic.Filter.VCorPersonPrivilege.Report"
+                           }
+                        ]
+                     }
+                  ]
+               },
+               {
+                  "@id": "Vci.MosaicVivarium.Menu.Administration.Accounts",
+                  "@text": "Accounts",
+                  "@privilege-id": "Vci.Mosaic.Privilege.Account.ManageList",
+                  "menu": [
+                     {
+                        "@id": "Vci.MosaicVivarium.Menu.Administration.Accounts.Accounts",
+                        "@text": "Manage Accounts",
+                        "@href": "~/vci_web/admin/Accounts.aspx",
+                        "@privilege-id": "Vci.Mosaic.Privilege.Account.ManageList"
+                     },
+                     {
+                        "@id": "Vci.MosaicVivarium.Menu.Administration.Accounts.ChangeAccounts",
+                        "@text": "Manage Account Assignments",
+                        "@href": "~/Vivarium/Accounting/AccountAssignments.aspx",
+                        "@privilege-id": "Vci.MosaicVivarium.Privilege.Housing.Billing.Admin"
+                     }
+                  ]
+               },
+               {
+                  "@id": "Vci.MosaicVivarium.Menu.Administration.QuotaCenters",
+                  "@text": "Quota Centers",
+                  "@href": "~/Vivarium/QuotaCenter/QuotaCenters.aspx",
+                  "@privilege-id": "Vci.MosaicVivarium.Privilege.Administration.Colony",
+                  "@boolean-setting-id": "Vci.Mosaic.Test.Enable"
+               },
+               {
+                  "@id": "Vci.MosaicVivarium.Menu.Administration.Ratesheet",
+                  "@text": "Rate Sheet",
+                  "@href": "~/Vivarium/Accounting/StandardRates.aspx",
+                  "@privilege-id": "Vci.MosaicVivarium.Privilege.Housing.Billing.Admin"
+               },
+               {
+                  "@id": "Vci.MosaicVivarium.Menu.Administration.CageLocationTemplates",
+                  "@text": "Location-Specific Cage Card Templates",
+                  "@href": "~/Vivarium/Housing/CageLocationTemplate.aspx",
+                  "@boolean-setting-id": "Vci.Mosaic.Test.Enable"
+               },
+               {
+                  "@id": "Vci.MosaicVivarium.Menu.Administration.Lists",
+                  "@text": "Lists",
+                  "menu": [
+                     {
+                        "@id": "Vci.MosaicVivarium.Menu.Administration.LookupLists",
+                        "@text": "Lookup Lists",
+                        "@href": "~/vci_web/admin/LookupLists.aspx",
+                        "@privilege-id": "Vci.Mosaic.Privilege.Administration.Maintenance"
+                     },
+                     {
+                        "@id": "Vci.MosaicInvivo.Menu.Administration.Lists.AnnList",
+                        "@text": "Annotation Lists",
+                        "@href": "~/Prototypes/AnnotationListEditor/AnnotationListEditor.aspx",
+                        "@privilege-id": "Vci.Mosaic.Privilege.Administration.Maintenance",
+                        "@boolean-setting-id": "Vci.Mosaic.Test.Enable"
+                     },
+                     {
+                        "@id": "Vci.Mosaic.Menu.Administration.Exam.Builder",
+                        "@text": "Exam Builder",
+                        "@href": "~/Vivarium/Exams/Builder.aspx",
+                        "@privilege-id": "Vci.Mosaic.Privilege.Administration.Maintenance",
+                        "@boolean-setting-id": "Vci.Mosaic.Test.Enable"
+                     },
+                     {
+                        "@id": "Vci.Mosaic.Menu.Administration.TaskClass",
+                        "@text": "Task Types",
+                        "@href": "~/vci_web/Workflow/TaskClass.aspx",
+                        "@privilege-id": "Vci.Mosaic.Privilege.Administration.Workflow"
+                     }
+                  ]
+               },
+               {
+                  "@id": "Vci.MosaicVivarium.Menu.Administration.Genotypes",
+                  "@text": "Genotypes",
+                  "@href": "~/Vivarium/Admin/ManageGenotypes.aspx",
+                  "@privilege-id": "Vci.MosaicVivarium.Privilege.Genotype.EditDefaultList"
+               },
+               {
+                  "@id": "Vci.MosaicVivarium.Menu.Administration.Protocol",
+                  "@text": "Protocols",
+                  "@href": "~/Vivarium/Admin/Protocols.aspx"
+               },
+               {
+                  "@id": "Vci.MosaicVivarium.Menu.Administration.Reports.SwissKvetFormC",
+                  "@text": "Swiss KVET Form C",
+                  "@href": "~/Vivarium/Reports/SwissKvetFormC.aspx",
+                  "@privilege-id": "Vci.MosaicVivarium.Privilege.Regional.SwissKvetFormC"
+               },
+               {
+                  "@id": "Vci.MoaicVivarium.Menu.Administration.Reports",
+                  "@text": "Reports",
+                  "menu": [
+                     {
+                        "@id": "Vci.Mosaic.Menu.Administration.Report.Log",
+                        "@text": "Event Log",
+                        "@href": "~/Vivarium/Report3.aspx?MetaXmlKey=Vci.Mosaic.MetaXml.Log.Report&Title=Event+Log&ViewSet=Vci.Mosaic.View.Log.Report&FilterSet=Vci.Mosaic.Filter.Log.Report&TransformSet=Vci.Mosaic.Transform.Log.Report",
+                        "@privilege-id": "Vci.Mosaic.Privilege.Administration.Personnel"
+                     },
+                     {
+                        "@id": "Vci.Mosaic.Menu.Administration.Audit.Log",
+                        "@text": "Audit Log",
+                        "@href": "~/Vivarium/Report3.aspx?MetaXmlKey=Vci.Mosaic.MetaXml.Audit.Grid&Title=Audit+Log&ViewSet=Vci.Mosaic.View.Audit.Grid&FilterSet=Vci.Mosaic.Filter.Audit.Grid&TransformSet=Vci.Mosaic.Transform.Audit.Grid",
+                        "@privilege-id": "Vci.Mosaic.Privilege.Administration.Personnel"
+                     }
+                  ]
+               },
+               {
+                  "@id": "Vci.MosaicVivarium.Menu.Administration.Import",
+                  "@text": "Import",
+                  "@privilege-id": "Vci.MosaicVivarium.Privilege.Administration.Import",
+                  "menu": [
+                     {
+                        "@id": "Vci.MosaicVivarium.Menu.Administration.ImportGettingStarted",
+                        "@text": "Getting Started with Data Import",
+                        "@href": "~/Vivarium/Admin/ImportSummary.aspx",
+                        "@privilege-id": "Vci.MosaicVivarium.Privilege.Administration.Import"
+                     },
+                     {
+                        "@id": "Vci.MosaicVivarium.Menu.Administration.PersonnelImport",
+                        "@text": "Personnel (User) Import",
+                        "@href": "~/vci_web/admin/PersonnelUpload.aspx",
+                        "@privilege-id": "Vci.MosaicVivarium.Privilege.Administration.Import"
+                     },
+                     {
+                        "@id": "Vci.MosaicVivarium.Menu.Administration.PersonnelImportWizard",
+                        "@text": "Personnel Import Wizard",
+                        "@href": "~/Vivarium/Admin/ImportWizard.aspx?ImportTypeGuid=ac8d23c678fb49ff90f7b43fbe8d7b9a",
+                        "@privilege-id": "Vci.MosaicVivarium.Privilege.Administration.Import"
+                     },
+                     {
+                        "@id": "Vci.MosaicVivarium.Menu.Administration.LookupsImportWizard",
+                        "@text": "Lookups Import Wizard",
+                        "@href": "~/Vivarium/Admin/ImportWizard.aspx?ImportTypeGuid=681f2a8c46464664a9187845febeacd5",
+                        "@privilege-id": "Vci.MosaicVivarium.Privilege.Administration.Import"
+                     },
+                     {
+                        "@id": "Vci.MosaicVivarium.Menu.Administration.LookupsCageTypeImportWizard",
+                        "@text": "Lookups - Cage Type Import Wizard",
+                        "@href": "~/Vivarium/Admin/ImportWizard.aspx?ImportTypeGuid=7bbde8eb1b0340bb81e17c33b973b3cc",
+                        "@privilege-id": "Vci.MosaicVivarium.Privilege.Administration.Import"
+                     },
+                     {
+                        "@id": "Vci.MosaicVivarium.Menu.Administration.HousingSiteImportWizard",
+                        "@text": "Housing - Sites Import Wizard",
+                        "@href": "~/Vivarium/Admin/ImportWizard.aspx?ImportTypeGuid=a61f6028eb6f41f5bdb32177fb690414",
+                        "@privilege-id": "Vci.MosaicVivarium.Privilege.Administration.Import"
+                     },
+                     {
+                        "@id": "Vci.MosaicVivarium.Menu.Administration.HousingBuildingImportWizard",
+                        "@text": "Housing - Buildings Import Wizard",
+                        "@href": "~/Vivarium/Admin/ImportWizard.aspx?ImportTypeGuid=96a16f7f0e6346b8841acf2e4826439d",
+                        "@privilege-id": "Vci.MosaicVivarium.Privilege.Administration.Import"
+                     },
+                     {
+                        "@id": "Vci.MosaicVivarium.Menu.Administration.HousingRoomImportWizard",
+                        "@text": "Housing - Room Import Wizard",
+                        "@href": "~/Vivarium/Admin/ImportWizard.aspx?ImportTypeGuid=453837f633c8448980fcbdafec08235b",
+                        "@privilege-id": "Vci.MosaicVivarium.Privilege.Administration.Import"
+                     },
+                     {
+                        "@id": "Vci.MosaicVivarium.Menu.Administration.HousingRackImportWizard",
+                        "@text": "Housing - Rack Import Wizard",
+                        "@href": "~/Vivarium/Admin/ImportWizard.aspx?ImportTypeGuid=12421c7c7c6a46e6942fe8c050e6590b",
+                        "@privilege-id": "Vci.MosaicVivarium.Privilege.Administration.Import"
+                     },
+                     {
+                        "@id": "Vci.MosaicVivarium.Menu.Administration.GroupCredentialImport",
+                        "@text": "Group Import",
+                        "@href": "~/vci_web/admin/GroupCredentialUpload.aspx",
+                        "@privilege-id": "Vci.MosaicVivarium.Privilege.Administration.Import"
+                     },
+                     {
+                        "@id": "Vci.MosaicVivarium.Menu.Administration.GroupImportWizard",
+                        "@text": "Group Import Wizard",
+                        "@href": "~/Vivarium/Admin/ImportWizard.aspx?ImportTypeGuid=2094f166cd084bbc95b69a71e157f2b4",
+                        "@privilege-id": "Vci.MosaicVivarium.Privilege.Administration.Import"
+                     },
+                     {
+                        "@id": "Vci.MosaicVivarium.Menu.Administration.PersonnelGroupImportWizard",
+                        "@text": "Personnel-Group Import Wizard",
+                        "@href": "~/Vivarium/Admin/ImportWizard.aspx?ImportTypeGuid=ce393f81c02445559a94781402814d74",
+                        "@privilege-id": "Vci.MosaicVivarium.Privilege.Administration.Import"
+                     },
+                     {
+                        "@id": "Vci.MosaicVivarium.Menu.Administration.AccountImport",
+                        "@text": "Account Import",
+                        "@href": "~/vci_web/admin/AccountUpload.aspx",
+                        "@privilege-id": "Vci.MosaicVivarium.Privilege.Administration.Import"
+                     },
+                     {
+                        "@id": "Vci.MosaicVivarium.Menu.Administration.AccountImportWizard",
+                        "@text": "Account Import Wizard",
+                        "@href": "~/Vivarium/Admin/ImportWizard.aspx?ImportTypeGuid=762be16cb8a3470e831d94531b92df93",
+                        "@privilege-id": "Vci.MosaicVivarium.Privilege.Administration.Import"
+                     },
+                     {
+                        "@id": "Vci.MosaicVivarium.Menu.Administration.ColonyImport",
+                        "@text": "Colony Import",
+                        "@href": "~/Vivarium/Admin/ColonyUpload.aspx",
+                        "@privilege-id": "Vci.MosaicVivarium.Privilege.Administration.Import"
+                     },
+                     {
+                        "@id": "Vci.MosaicVivarium.Menu.Administration.ColonyImportWizard",
+                        "@text": "Colony Import Wizard",
+                        "@href": "~/Vivarium/Admin/ImportWizard.aspx?ImportTypeGuid=c3b1be6d93c844878522421916d242d4",
+                        "@privilege-id": "Vci.MosaicVivarium.Privilege.Administration.Import"
+                     },
+                     {
+                        "@id": "Vci.MosaicVivarium.Menu.Administration.ColonyPrivilegeUserCredentialImportWizard",
+                        "@text": "Colony - User Permissions Import Wizard",
+                        "@href": "~/Vivarium/Admin/ImportWizard.aspx?ImportTypeGuid=2badf61734154d76baec1967cd709e6a",
+                        "@privilege-id": "Vci.MosaicVivarium.Privilege.Administration.Import"
+                     },
+                     {
+                        "@id": "Vci.MosaicVivarium.Menu.Administration.ColonyPrivilegeGroupCredentialImportWizard",
+                        "@text": "Colony - Group Permissions Import Wizard",
+                        "@href": "~/Vivarium/Admin/ImportWizard.aspx?ImportTypeGuid=33bfff26621d4262948bf86781c09744",
+                        "@privilege-id": "Vci.MosaicVivarium.Privilege.Administration.Import"
+                     },
+                     {
+                        "@id": "Vci.MosaicVivarium.Menu.Administration.ProtocolImportWizard",
+                        "@text": "Protocol Import Wizard",
+                        "@href": "~/Vivarium/Admin/ImportWizard.aspx?ImportTypeGuid=f79d4a2a62fd4eb5bbc4aa4eb13f744c",
+                        "@privilege-id": "Vci.MosaicVivarium.Privilege.Administration.Import"
+                     },
+                     {
+                        "@id": "Vci.MosaicVivarium.Menu.Administration.ProtocolAllocationImportWizard",
+                        "@text": "Protocol Allocation Import Wizard",
+                        "@href": "~/Vivarium/Admin/ImportWizard.aspx?ImportTypeGuid=39c1b4bbabd34e92bba95be2cc3bc31f",
+                        "@privilege-id": "Vci.MosaicVivarium.Privilege.Administration.Import"
+                     },
+                     {
+                        "@id": "Vci.MosaicVivarium.Menu.Administration.CageImport",
+                        "@text": "Cage Card Import",
+                        "@href": "~/Vivarium/Admin/CageCardUpload.aspx",
+                        "@privilege-id": "Vci.MosaicVivarium.Privilege.Administration.Import"
+                     },
+                     {
+                        "@id": "Vci.MosaicVivarium.Menu.Administration.CageCardImportWizard",
+                        "@text": "Cage Card Import Wizard",
+                        "@href": "~/Vivarium/Admin/ImportWizard.aspx?ImportTypeGuid=f5a6761a531244ef9e4a200e17a5dd07",
+                        "@privilege-id": "Vci.MosaicVivarium.Privilege.Administration.Import"
+                     },
+                     {
+                        "@id": "Vci.MosaicVivarium.Menu.Administration.MatingImport",
+                        "@text": "Mating Import Wizard",
+                        "@href": "~/Vivarium/Admin/ImportWizard.aspx?ImportTypeGuid=d03c10f8cf8441c5a18f2c38f2f26159",
+                        "@privilege-id": "Vci.MosaicVivarium.Privilege.Administration.Import"
+                     },
+                     {
+                        "@id": "Vci.MosaicVivarium.Menu.Administration.AnimalImport",
+                        "@text": "Animal Import",
+                        "@href": "~/Vivarium/Admin/AnimalUpload.aspx",
+                        "@privilege-id": "Vci.MosaicVivarium.Privilege.Administration.Import"
+                     },
+                     {
+                        "@id": "Vci.MosaicVivarium.Menu.Administration.AnimalImport2",
+                        "@text": "Animal Import Wizard",
+                        "@href": "~/Vivarium/Admin/ImportWizard.aspx?ImportTypeGuid=36f13d1877d44803847f8756e552424a",
+                        "@privilege-id": "Vci.MosaicVivarium.Privilege.Administration.Import"
+                     },
+                     {
+                        "@id": "Vci.MosaicVivarium.Menu.Administration.MatingParentAnimalImport",
+                        "@text": "Mating - Parent Animal Import Wizard",
+                        "@href": "~/Vivarium/Admin/ImportWizard.aspx?ImportTypeGuid=87c87884a1f44cd297d171f2bb87fa75",
+                        "@privilege-id": "Vci.MosaicVivarium.Privilege.Administration.Import"
+                     },
+                     {
+                        "@id": "Vci.MosaicVivarium.Menu.Administration.LitterImport",
+                        "@text": "Litter Import Wizard",
+                        "@href": "~/Vivarium/Admin/ImportWizard.aspx?ImportTypeGuid=b6c753431a794f11a935ce1af59b2586",
+                        "@privilege-id": "Vci.MosaicVivarium.Privilege.Administration.Import"
+                     }
+                  ]
+               },
+               {
+                  "@id": "Vci.MosaicVivarium.Menu.Administration.Maintenance",
+                  "@text": "Maintenance",
+                  "@privilege-id": "Vci.MosaicVivarium.Privilege.Administration.Maintenance",
+                  "menu": [
+                     {
+                        "@id": "Vci.MosaicVivarium.Menu.Administration.Maintenance.Login",
+                        "@text": "Login without Single Sign On",
+                        "@href": "~/Login.aspx?Logout=True&ForceAuthenticate=True",
+                        "@privilege-id": "Vci.MosaicVivarium.Privilege.Administration.Maintenance",
+                        "@vci-tooltip-id": "Vci.MosaicVivarium.Tooltip.Administration.Maintenance.Login",
+                        "@vci-tooltip-html": "only applies to sites with Single Sign On enabled"
+                     },
+                     {
+                        "@id": "Vci.MosaicVivarium.Menu.Administration.Maintenance.Vivarium",
+                        "@text": "Vivarium Maintenance",
+                        "@href": "~/Vivarium/Admin/Maintenance.aspx",
+                        "@privilege-id": "Vci.MosaicVivarium.Privilege.Administration.Maintenance"
+                     },
+                     {
+                        "@id": "Vci.MosaicVivarium.Menu.Administration.Maintenance.Mosaic",
+                        "@text": "Mosaic Maintenance",
+                        "@href": "~/vci_web/admin/Maintenance.aspx",
+                        "@privilege-id": "Vci.Mosaic.Privilege.Administration.Maintenance"
+                     },
+                     {
+                        "@id": "Vci.MosaicVivarium.Menu.Administration.Maintenance.Settings",
+                        "@text": "Mosaic Settings",
+                        "@href": "~/vci_web/admin/MosaicSettings.aspx",
+                        "@privilege-id": "Vci.MosaicVivarium.Privilege.Administration.Maintenance"
+                     },
+                     {
+                        "@id": "Vci.Mosaic.Menu.Administration.ScheduledJob.Manage",
+                        "@text": "Manage Scheduled Jobs",
+                        "@href": "~/vci_web/notifications/ManageNotification.aspx",
+                        "@privilege-id": "Vci.Mosaic.Privilege.Administration.Maintenance",
+                        "@boolean-setting-id": "Vci.Mosaic.Test.Enable"
+                     },
+                     {
+                        "@id": "Vci.Mosaic.Menu.Administration.Maintenance.Setting.Metadata",
+                        "@text": "Mosaic Settings Metadata",
+                        "@href": "~/vci_web/setting/Setting.aspx",
+                        "@privilege-id": "Vci.Mosaic.Privilege.Administration.Maintenance",
+                        "@boolean-setting-id": "Vci.Mosaic.Debug.DevelopmentMode"
+                     }
+                  ]
+               },
+               {
+                  "@id": "Vci.MosaicVivarium.Menu.Administration.ApplicationProgrammingInterface",
+                  "@text": "Application Programming Interface (API)",
+                  "@href": "~/Vivarium/Admin/ApplicationProgrammingInterface.aspx",
+                  "@privilege-id": "Vci.MosaicVivarium.Privilege.Menu.Administration"
+               }
+            ]
+         },
+         {
+            "@id": "Vci.MosaicVivarium.Menu.Misc",
+            "@text": "Vivarium",
+            "@privilege-id": "Vci.MosaicVivarium.Privilege.Menu.Vivarium",
+            "menu": [
+               {
+                  "@id": "Vci.MosaicVivarium.Menu.Misc.VivariumTasks",
+                  "@text": "Technician Task Lists",
+                  "@href": "~/Vivarium/VivariumTasks.aspx",
+                  "@privilege-id": "Vci.MosaicVivarium.Privilege.Animal.Edit"
+               },
+               {
+                  "@id": "Vci.Mosaic.Menu.Work",
+                  "@text": "Task Worksheet",
+                  "@href": "~/vci_web/workflow/Task.aspx"
+               },
+               {
+                  "@id": "Vci.MosaicVivarium.Menu.Misc.Documents",
+                  "@text": "Document Library",
+                  "@href": "~/Vivarium/VivariumDocuments.aspx"
+               },
+               {
+                  "@id": "Vci.Mosaic.Menu.Administration.Maintenance.Exam.AnimalEthics",
+                  "@text": "Animal Ethics",
+                  "@href": "~/Vivarium/Exams/AnimalEthics.aspx",
+                  "@privilege-id": "Vci.Mosaic.Privilege.Administration.Maintenance",
+                  "@boolean-setting-id": "Vci.Mosaic.Debug.DevelopmentMode"
+               }
+            ]
+         }
+      ],
+      "spacer": null,
+      "link": [
+         {
+            "@id": "home",
+            "@text": "home",
+            "@href": "~/MyHome.aspx"
+         },
+         {
+            "@id": "options",
+            "@text": "options",
+            "@href": "~/vci_web/admin/UserSettings.aspx",
+            "@modal": "True"
+         },
+         {
+            "@id": "help",
+            "@text": "help",
+            "@href": "~/vci_web/help/AllHelp.aspx",
+            "@new-window": "True",
+            "@window-features": "width=1024,height=768,menubar=no,toolbar=no,resize=yes"
+         },
+         {
+            "@id": "feedback",
+            "@text": "feedback",
+            "@href": "http://www.VirtualChemistry.com/VCI/support/support.aspx?fname=Mosaic&lname=Mosaic&email=&phone=",
+            "@new-window": "True",
+            "@window-features": "width=1024,height=768,menubar=no,toolbar=no,resize=yes"
+         },
+         {
+            "@id": "logout",
+            "@text": "logout",
+            "@href": "~/Login.aspx?Logout=True"
+         }
+      ]
+   }
+}

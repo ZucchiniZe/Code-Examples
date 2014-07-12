@@ -1,0 +1,25 @@
+{
+  "?xml": {
+    "@version": "1.0",
+    "@encoding": "utf-8"
+  },
+  "menustrip": {
+    "key": "Vci.MosaicVivarium.Menu.Main",
+    "@orientation": "Horizontal",
+    "@width": "100%",
+    "@style": "Closed",
+    "@background-color": "#DD8C30",
+    "@text-color": "black",
+    "@menu-color": "#efefef",
+    "@menu-text-color": "black",
+    "@arrow-image": "~/vci_web/images/arrow-right.gif",
+    "@mode": "Click",
+    "menu": [
+      {
+        "@id": "Vci.MosaicVivarium.Privilege.Menu.Animal",
+        "@text": "Animals",
+        "@privilege-id": "Vci.MosaicVivarium.Privilege.Menu.Animal"
+      }
+    ]
+  }
+}
