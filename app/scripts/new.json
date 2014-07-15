@@ -1,0 +1,65 @@
+{
+  "?xml": {
+    "version": "1.0",
+    "encoding": "utf-8"
+  },
+  "menustrip": {
+    "key": "Vci.MosaicVivarium.Menu.Main",
+    "orientation": "Horizontal",
+    "width": "100%",
+    "style": "Closed",
+    "background-color": "#DD8C30",
+    "text-color": "black",
+    "menu-color": "#efefef",
+    "menu-text-color": "black",
+    "arrow-image": "~/vci_web/images/arrow-right.gif",
+    "mode": "Click",
+    "menu": [
+    {
+      "id": "Vci.MosaicVivarium.Menu.Animal",
+      "text": "Animals",
+      "privilege-id": "Vci.MosaicVivarium.Privilege.Menu.Animal",
+      "menu": [
+      {
+        "id": "Vci.MosaicVivarium.Menu.Animal.Mouse",
+        "text": "Animal Worksheet",
+        "href": "~/Vivarium/Animal/Animals2.aspx"
+      },
+      {
+        "id": "Vci.MosaicVivarium.Menu.Animal.AnimalHealthCases",
+        "text": "Health Cases",
+        "href": "~/Vivarium/AnimalHealthCases.aspx",
+        "privilege-id": "Vci.MosaicVivarium.Privilege.Health.Edit"
+      },
+      {
+        "id": "Vci.MosaicVivarium.Menu.Animal.Ordering",
+        "text": "Ordering",
+        "href": "~/Vivarium/Animal/AnimalOrdering.aspx",
+        "privilege-id": "Vci.MosaicVivarium.Privilege.Menu.Animal.Ordering"
+      },
+      {
+        "id": "Vci.MosaicVivarium.Menu.Animal.Receiving",
+        "text": "Receiving",
+        "href": "~/Vivarium/Animal/AnimalReceiving.aspx",
+        "privilege-id": "Vci.MosaicVivarium.Privilege.Menu.Animal.Receiving"
+      },
+      {
+        "id": "Vci.MosaicVivarium.Menu.Animal.Tailing",
+        "text": "Sample for Genotyping",
+        "href": "~/Vivarium/Animal/Animals2.aspx?PageMode=Tailing",
+        "privilege-id": "Vci.MosaicVivarium.Privilege.Menu.Animal.TagAndTail"
+      },
+      {
+        "id": "Vci.MosaicVivarium.Menu.Animal.Genotyping",
+        "text": "Genotyping",
+        "href": "~/Vivarium/Animal/Animals2.aspx?PageMode=Genotyping",
+        "privilege-id": "Vci.MosaicVivarium.Privilege.Menu.Animal.Genotyping"
+      },
+        "id": "Vci.MosaicVivarium.Menu.Animal.Sentinel",
+        "text": "Sentinels",
+        "privilege-id": "Vci.MosaicVivarium.Privilege.Animal.Sentinel"
+      ]
+    }
+    ]
+  }
+}

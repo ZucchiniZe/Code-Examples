@@ -1,0 +1,13 @@
+<h4>Family <input type="text" ng-model="search.$" placeholder="Search"/></h4>
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Gender</th>
+    </tr>
+    <tr ng-repeat="person in family | filter:search">
+        <td>{{person.name}}</td>
+        <td>{{person.age}}</td>
+        <td>{{person.gender}}</td>
+    </tr>
+</table>
