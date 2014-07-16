@@ -1,5 +1,5 @@
 <h4>Family <input type="text" ng-model="search.$" placeholder="Search"/></h4>
-<table class="table">
+<table class="table" ng-controller="FamilyCtrl" ng-init="loadAPI()">
     <tr>
         <th>Name</th>
         <th>Age</th>
@@ -9,5 +9,12 @@
         <td>{{person.name}}</td>
         <td>{{person.age}}</td>
         <td>{{person.gender}}</td>
+        <td><input class="editButton" type="button" value="Edit"/></td>
+    </tr>
+    <tr click="postAPI()">
+        <td><input class="personName" type="text" placeholder="Name"/></td>
+        <td><input class="personAge" type="text" placeholder="Age"/></td>
+        <td><input class="personGender" type="text" placeholder="Gender"/></td>
+        <td><input class="submitButton" type="button" value="Submit"/></td>
     </tr>
 </table>

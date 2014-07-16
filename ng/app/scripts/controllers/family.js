@@ -8,32 +8,24 @@
  * Controller of the ngApp
  */
 angular.module('ngApp')
-  .controller('FamilyCtrl', function ($scope) {
-    $scope.family = [
-      {
-        name: 'Alex',
-        age: '14',
-        gender: 'Male'
-      },
-      {
-        name: 'Umpa',
-        age: '71',
-        gender: 'Male'
-      },
-      {
-        name: 'Colin',
-        age: '11',
-        gender: 'Llama'
-      },
-      {
-        name: 'Baggie',
-        age: '70',
-        gender: 'Female'
-      },
-      {
-        name: 'Laura',
-        age: '45',
-        gender: 'Female'
-      }
-    ];
-  });
+  .controller('FamilyCtrl', ['$scope', '$http', function ($scope, $http) {
+    $scope.loadAPI = function() {
+      $http({ method: 'GET', url: 'http://famapi.herokuapp.com/api/people'}).success(function(data){
+        $scope.family = data;
+      });
+    };
+    $scope.postAPI = function() {
+      var $name = $('.personName');
+      var $age = $('.personAge');
+      var $gender = $('.personGender');
+      var postData = {
+        name: $name.val(),
+        age: $age.val(),
+        gender: $gender.val()
+      };
+      console.log(postData);
+      $http({ method: 'POST', url: 'http://famapi.herokuapp.com/api/people', data: postData}).success(function(data){
+        $scope.family.append = data;
+      });
+    }
+  }]);

@@ -14,4 +14,11 @@ angular.module('ngApp')
       'AngularJS',
       'Karma'
     ];
+    $scope.jQueryEnter = function() {
+      $('p.lead').empty();
+      $('p.lead').append('<img src="images/yeoman.png" alt="I\'m Yeoman"><br><strong>OMG</strong> a jQuery Function!');
+    };
+    $scope.leaveExit = function() {
+
+    };
   });

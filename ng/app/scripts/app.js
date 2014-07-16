@@ -21,12 +21,12 @@ app.config(function ($routeProvider) {
       templateUrl: 'views/about.html',
       controller: 'AboutCtrl'
     })
-    .when('/404', {
-      templateUrl: '404.html'
-    })
     .when('/family', {
       templateUrl: 'views/family.html',
       controller: 'FamilyCtrl'
+    })
+    .when('/404', {
+      templateUrl: '404.html'
     })
     .otherwise({
       redirectTo: '/404'
@@ -34,9 +34,25 @@ app.config(function ($routeProvider) {
 });
 
 app.directive('enter', function() {
-  return function(scope, element){
+  return function(scope, element, attrs){
     element.bind('mouseenter', function() {
-      console.log('I am inside you!');
+      scope.$apply(attrs.enter);
     });
   };
+});
+
+app.directive('leave', function () {
+  return function (scope, element, attrs) {
+    element.bind('mouseleave', function () {
+      scope.$apply(attrs.enter);
+    });
+  };
+});
+
+app.directive('click', function() {
+  return function (scope, element, attrs) {
+    element.bind('mouseclick', function() {
+      scope.$apply(attrs.enter);
+    })
+  }
 });
