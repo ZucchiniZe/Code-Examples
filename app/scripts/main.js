@@ -34,3 +34,30 @@ $(document).ready(function(){
 function playSound() {
   document.getElementById('laser').play();
 }
+
+var isMobile = {
+    Android: function() {
+            return navigator.userAgent.match(/Android/i);
+        },
+    BlackBerry: function() {
+            return navigator.userAgent.match(/BlackBerry/i);
+        },
+    iOS: function() {
+            return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+        },
+    Opera: function() {
+            return navigator.userAgent.match(/Opera Mini/i);
+        },
+    Windows: function() {
+            return navigator.userAgent.match(/IEMobile/i);
+        },
+    any: function() {
+            return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+        }
+}
+
+if( isMobile.any() ) {
+  $('#isMobile').html('<h1>You are on a mobile Device</h1>');
+} else {
+  $('#isMobile').html('<h1>You are not on a mobile device</h1>');
+}
