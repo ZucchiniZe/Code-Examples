@@ -25,6 +25,39 @@ function playSound() {
 then I refrenced the function in the html code on the big button by putting `javascript:playSound();` in the href for the button so it calls
 the function and plays the audio.
 
+## Client Detection
+
+```javascript
+var isMobile = {
+    Android: function() {
+            return navigator.userAgent.match(/Android/i);
+        },
+    BlackBerry: function() {
+            return navigator.userAgent.match(/BlackBerry/i);
+        },
+    iOS: function() {
+            return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+        },
+    Opera: function() {
+            return navigator.userAgent.match(/Opera Mini/i);
+        },
+    Windows: function() {
+            return navigator.userAgent.match(/IEMobile/i);
+        },
+    any: function() {
+            return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+        }
+}
+
+if( isMobile.any() ) {
+  $('#isMobile').html('<h1>You are on a mobile Device</h1>');
+} else {
+  $('#isMobile').html('<h1>You are not on a mobile device</h1>');
+}
+```
+For the client detection what we do is try and find out the clients useragent and cross checks it with; android, blackberry, iOS, opera, and windows phone.
+The variable is isMobile, isMobile.any checks all of them and isMobile.<useragent> is just the <useragent>
+
 ### Soloutions
 
 [] Browser Drag and Drop
