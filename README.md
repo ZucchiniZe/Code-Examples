@@ -11,6 +11,20 @@ It expects that you have [nodejs](http://nodejs.org) installed
 
 ## Sound Example
 
+For the sound I converted the sound to a wav file for better playback but mainly because the `<audio>` tag didnt want to accept it very well.
+Then I put the audio file in the audio tag like so
+```html
+<audio id="laser" src="audio/laser.wav" preload="audio"></audio>
+```
+then I refreenced it in the javascript file with the function playSound, here is the code,
+```javascript
+function playSound() {
+  document.getElementById('laser').play();
+}
+```
+then I refrenced the function in the html code on the big button by putting `javascript:playSound();` in the href for the button so it calls
+the function and plays the audio.
+
 ### Soloutions
 
 1. Browser Drag and Drop
