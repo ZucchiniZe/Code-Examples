@@ -46,7 +46,7 @@ Parse provided JSON and create a desktop and tablet friendly menu using Javascri
 
 soloution: http://alexb.ninja/wcup/scripts/main.js function showTeams()
 
-4  Client Detection
+4.  Client Detection
 
 Create a code example that determines if the user has a touch screen (possible?).
 
