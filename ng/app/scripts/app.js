@@ -51,8 +51,32 @@ app.directive('leave', function () {
 
 app.directive('click', function() {
   return function (scope, element, attrs) {
-    element.bind('mouseclick', function() {
+    element.bind('click', function() {
       scope.$apply(attrs.enter);
     })
   }
+});
+
+var $name = $('.personName');
+var $age = $('.personAge');
+var $gender = $('.personGender');
+
+$('#submit').click(function() {
+  console.log('checking');
+  var formData = {
+    name: $name.val(),
+    age: $age.val(),
+    gender: $gender.val()
+  };
+  $.ajax({
+    type: 'POST',
+    url: 'http://famapi.herokuapp.com/api/people',
+    data: formData,
+    success: function (data) {
+      console.log(data);
+    },
+    error: function (error1, error2, error3){
+      console.log(error1, error2, error3);
+    }
+  })
 });

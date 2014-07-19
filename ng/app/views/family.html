@@ -1,20 +1,23 @@
 <h4>Family <input type="text" ng-model="search.$" placeholder="Search"/></h4>
-<table class="table" ng-controller="FamilyCtrl" ng-init="loadAPI()">
+<div class="panel panel-default">
+  <table class="table" ng-controller="FamilyCtrl" ng-init="loadAPI()">
     <tr>
-        <th>Name</th>
-        <th>Age</th>
-        <th>Gender</th>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Gender</th>
+      <th>Modify</th>
     </tr>
     <tr ng-repeat="person in family | filter:search">
-        <td>{{person.name}}</td>
-        <td>{{person.age}}</td>
-        <td>{{person.gender}}</td>
-        <td><input class="editButton" type="button" value="Edit"/></td>
+      <td>{{person.name}}</td>
+      <td>{{person.age}}</td>
+      <td>{{person.gender}}</td>
+      <td><input class="editButton btn btn-primary" type="button" value=" Edit "/></td>
     </tr>
     <tr click="postAPI()">
-        <td><input class="personName" type="text" placeholder="Name"/></td>
-        <td><input class="personAge" type="text" placeholder="Age"/></td>
-        <td><input class="personGender" type="text" placeholder="Gender"/></td>
-        <td><input class="submitButton" type="button" value="Submit"/></td>
+      <td><input class="personName" type="text" placeholder="Name"/></td>
+      <td><input class="personAge" type="text" placeholder="Age"/></td>
+      <td><input class="personGender" type="text" placeholder="Gender"/></td>
+      <td><input id="submit" class="submitButton" type="button" value="Submit" click="postAPI()"/></td>
     </tr>
-</table>
+  </table>
+</div>
