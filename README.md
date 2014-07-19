@@ -1,3 +1,4 @@
+![](http://img.shields.io/badge/docs-half-yellow.svg?style=flat)
 # Code Examples
 ---
 
