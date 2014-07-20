@@ -17,6 +17,7 @@ $(function () {
           '<td>' + person.name + '</td>' +
           '<td>' + person.age + '</td>' +
           '<td>' + person.gender + '</td>' +
+          '<td>' + person._id + '</td>' +
         '</tr>'
         );
       });
@@ -40,9 +41,10 @@ $(function () {
       success: function(person) {
         $people.append(
             '<tr>' +
-            '<td>' + person.name + '</td>' +
-            '<td>' + person.age + '</td>' +
-            '<td>' + person.gender + '</td>' +
+              '<td>' + person.name + '</td>' +
+              '<td>' + person.age + '</td>' +
+              '<td>' + person.gender + '</td>' +
+              '<td>' + person._id + '</td>' +
             '</tr>'
         );
       },
