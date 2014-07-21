@@ -6,6 +6,7 @@
     "modernizr": "~2.8.1",
     "jquery": "~2.1.1",
     "dropzone": "~3.10.2",
-    "mobile-detect": "hgoebl/mobile-detect.js#~0.4.0"
+    "mobile-detect": "hgoebl/mobile-detect.js#~0.4.0",
+    "flat-ui-official": "~2.1.3"
   }
 }
