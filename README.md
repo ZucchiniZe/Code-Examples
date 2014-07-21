@@ -1,5 +1,6 @@
 # Code Examples
 ![](http://img.shields.io/badge/docs-half-yellow.svg)
+![](http://progressed.io/bar/59)
 
 These are the code examples for the projects I am working on
 
