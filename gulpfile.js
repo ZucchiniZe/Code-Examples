@@ -18,8 +18,19 @@ gulp.task('styles', function () {
 gulp.task('scripts', function () {
     return gulp.src('app/scripts/**/*.js')
         .pipe($.jshint())
-        .pipe($.jshint.reporter('jshint-stylish'))
-        .pipe($.jshint.reporter('fail'));
+        .pipe($.notify(function (file) {
+          if (file.jshint.success) {
+            return false;
+          }
+
+          var errors = file.jshint.results.map(function (data) {
+            if (data.error) {
+              return "(" + data.error.line + ':' + data.error.character + ') ' + data.error.reason;
+            }
+          }).join("\n");
+          return file.relative + " (" + file.jshint.results.length + " errors) " + errors;
+        }))
+        .pipe($.size());
 });
 
 gulp.task('html', ['styles', 'scripts'], function () {
