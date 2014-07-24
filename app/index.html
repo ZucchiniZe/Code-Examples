@@ -9,9 +9,9 @@
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/dropzone/downloads/css/dropzone.css" />
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="bower_components/flat-ui-official/css/flat-ui.css" />
-    <link rel="stylesheet" href="bower_components/dropzone/downloads/css/dropzone.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -34,11 +34,37 @@
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">
               JSON Menu <span class="caret"></span>
             </a>
-            <ul class="dropdown-menu" role="menu">
+            <ul class="dropdown-menu multi-level" role="menu">
             </ul>
           </li>
         </ul>
         <h3 class="text-muted"><img src="images/vci_logo.png" alt="VCI LOGO" /></h3>
+      </div>
+
+      <div class="dropdown">
+        <a id="dLabel" role="button" data-toggle="dropdown" class="btn btn-primary" data-target="#" href="/page.html">
+            Dropdown <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu multi-level" role="menu" >
+          <li><a href="#">Some action</a></li>
+          <li><a href="#">Some other action</a></li>
+          <li class="divider"></li>
+          <li class="dropdown-submenu">
+            <a tabindex="-1" href="#">Hover me for more options</a>
+            <ul class="dropdown-menu">
+              <li><a tabindex="-1" href="#">Second level</a></li>
+              <li class="dropdown-submenu">
+                <a href="#">Even More..</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">3rd level</a></li>
+                  <li><a href="#">3rd level</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Second level</a></li>
+              <li><a href="#">Second level</a></li>
+            </ul>
+          </li>
+        </ul>
       </div>
 
       <div class="jumbotron">
@@ -76,11 +102,11 @@
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
-    <script src="bower_components/modernizr/modernizr.js"></script>
     <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/modernizr/modernizr.js"></script>
     <script src="bower_components/dropzone/downloads/dropzone.min.js"></script>
     <script src="bower_components/mobile-detect/mobile-detect.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     <script src="scripts/main.js"></script>

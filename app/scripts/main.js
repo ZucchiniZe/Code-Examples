@@ -19,7 +19,11 @@ function injectMenu() {
         '<li><a href="' + vcimenu.menu[4]["@href"] + '">' + vcimenu.menu[4]["@text"] + '</a></li>' +
         '<li><a href="' + vcimenu.menu[5]["@href"] + '">' + vcimenu.menu[5]["@text"] + '</a></li>' +
         '<li><a href="' + vcimenu.menu[6]["@href"] + '">' + vcimenu.menu[6]["@text"] + '</a></li>' +
-        '<li><a href="' + vcimenu.menu[7]["@href"] + '">' + vcimenu.menu[7]["@text"] + '</a></li>'
+        '<li><a href="' + vcimenu.menu[7]["@href"] + '">' + vcimenu.menu[7]["@text"] + '</a></li>' +
+        '<li class="dropdown-menu"></li>' +
+        '<ul class="dropdown-submenu">' +
+          '<li><a href="#">IM NESTED</a></li>' +
+        '</ul>'
       );
     },
     error: function(error, error1, error2) {
