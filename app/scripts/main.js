@@ -6,11 +6,10 @@ function injectMenu() {
     type:'GET',
     dataType: 'json',
     url:'scripts/min.json',
-    success: function(data) {
-      console.log(data);
-      var vcimenu = data.menustrip.menu[0];
-      var href = ["@href"];
-      var text = ["@text"];
+    success: function(d) {
+      var vcimenu = d.menustrip.menu[0];
+      var href = '["@href"]';
+      var text = '["@text"]';
       $('.dropdown-menu').append(
         '<li><a href="' + vcimenu.menu[0]["@href"] + '">' + vcimenu.menu[0]["@text"] + '</a></li>' +
         '<li><a href="' + vcimenu.menu[1]["@href"] + '">' + vcimenu.menu[1]["@text"] + '</a></li>' +
@@ -24,6 +23,36 @@ function injectMenu() {
         '<ul class="dropdown-submenu">' +
           '<li><a href="#">IM NESTED</a></li>' +
         '</ul>'
+      );
+      $('#jsonInject').append(
+        '<li>' + d.menustrip.menu[0]["@text"] + '</li>' +
+        '<ul>' +
+          '<li><a href="' + vcimenu.menu[0]["@href"] + '">' + vcimenu.menu[0]["@text"] + '</a></li>' +
+          '<li><a href="' + vcimenu.menu[1]["@href"] + '">' + vcimenu.menu[1]["@text"] + '</a></li>' +
+          '<li><a href="' + vcimenu.menu[2]["@href"] + '">' + vcimenu.menu[2]["@text"] + '</a></li>' +
+          '<li><a href="' + vcimenu.menu[3]["@href"] + '">' + vcimenu.menu[3]["@text"] + '</a></li>' +
+          '<li><a href="' + vcimenu.menu[4]["@href"] + '">' + vcimenu.menu[4]["@text"] + '</a></li>' +
+          '<li><a href="' + vcimenu.menu[5]["@href"] + '">' + vcimenu.menu[5]["@text"] + '</a></li>' +
+          '<li><a href="' + vcimenu.menu[6]["@href"] + '">' + vcimenu.menu[6]["@text"] + '</a></li>' +
+          '<ul>' +
+            '<li><a href="' + vcimenu.menu[6].menu[0]["@href"] + '">' + vcimenu.menu[6].menu[0]["@text"] + '</li>' +
+            '<li><a href="' + vcimenu.menu[6].menu[1]["@href"] + '">' + vcimenu.menu[6].menu[1]["@text"] + '</li>' +
+          '</ul>' +
+          '<li><a href="' + vcimenu.menu[7]["@href"] + '">' + vcimenu.menu[7]["@text"] + '</a></li>' +
+          '<ul>' +
+            '<li><a href="' + vcimenu.menu[7].menu[0]["@href"] + '">' + vcimenu.menu[7].menu[0]["@text"] + '</li>' +
+            '<li><a href="' + vcimenu.menu[7].menu[1]["@href"] + '">' + vcimenu.menu[7].menu[1]["@text"] + '</li>' +
+            '<li><a href="' + vcimenu.menu[7].menu[2]["@href"] + '">' + vcimenu.menu[7].menu[2]["@text"] + '</li>' +
+            '<li><a href="' + vcimenu.menu[7].menu[3]["@href"] + '">' + vcimenu.menu[7].menu[3]["@text"] + '</li>' +
+            '<li><a href="' + vcimenu.menu[7].menu[4]["@href"] + '">' + vcimenu.menu[7].menu[4]["@text"] + '</li>' +
+            '<li><a href="' + vcimenu.menu[7].menu[5]["@href"] + '">' + vcimenu.menu[7].menu[5]["@text"] + '</li>' +
+            '<li><a href="' + vcimenu.menu[7].menu[6]["@href"] + '">' + vcimenu.menu[7].menu[6]["@text"] + '</li>' +
+            '<li><a href="' + vcimenu.menu[7].menu[7]["@href"] + '">' + vcimenu.menu[7].menu[7]["@text"] + '</li>' +
+          '</ul>' +
+        '</ul>' +
+        '<li>' + d.menustrip.menu[1]["@text"] + '</li>' +
+        '<ul>' +
+          '<li><a href="' + d.menustrip.menu[1].menu[0]["@href"] + '">' + d.menustrip.menu[1].menu[0]["@text"] + '</li>'
       );
     },
     error: function(error, error1, error2) {

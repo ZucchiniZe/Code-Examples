@@ -61,26 +61,26 @@ The variable is isMobile, isMobile.any checks all of them and isMobile.<useragen
 
 ### Soloutions
 
-[] Browser Drag and Drop
+![](http://img.shields.io/badge/drag%20and%20drop-half-yellow.svg) Browser Drag and Drop
 
 Create a code example showing how to use capabilities of new browsers to
 drag and drop a file for upload.
 
 soloution: http://www.dropzonejs.com/
 
-[x] Browser Sound
+![](http://img.shields.io/badge/sound-complete-green.svg) Browser Sound
 
 Create a code example showing how to play a sound file without a plug-in.
 
 soloution: http://www.storiesinflight.com/html5/audio.html
 
-[] Menu JSON
+![](http://img.shields.io/badge/JSON%20Menu-half-yellow.svg) Menu JSON
 
 Parse provided JSON and create a desktop and tablet friendly menu using Javascript.
 
 soloution: http://alexb.ninja/wcup/scripts/main.js function showTeams()
 
-[x]  Client Detection
+![](http://img.shields.io/badge/Client%20Detection-complete-green.svg)  Client Detection
 
 Create a code example that determines if the user has a touch screen (possible?).
 
