@@ -52,7 +52,21 @@ function injectMenu() {
         '</ul>' +
         '<li>' + d.menustrip.menu[1]["@text"] + '</li>' +
         '<ul>' +
-          '<li><a href="' + d.menustrip.menu[1].menu[0]["@href"] + '">' + d.menustrip.menu[1].menu[0]["@text"] + '</li>'
+          '<li><a href="' + d.menustrip.menu[1].menu[0]["@href"] + '">' + d.menustrip.menu[1].menu[0]["@text"] + '</li>' +
+          '<li><a href="' + d.menustrip.menu[1].menu[1]["@href"] + '">' + d.menustrip.menu[1].menu[1]["@text"] + '</li>' +
+          '<li><a href="' + d.menustrip.menu[1].menu[2]["@href"] + '">' + d.menustrip.menu[1].menu[2]["@text"] + '</li>' +
+          '<li><a href="' + d.menustrip.menu[1].menu[3]["@href"] + '">' + d.menustrip.menu[1].menu[3]["@text"] + '</li>' +
+          '<li><a href="' + d.menustrip.menu[1].menu[4]["@href"] + '">' + d.menustrip.menu[1].menu[4]["@text"] + '</li>' +
+          '<li><a href="' + d.menustrip.menu[1].menu[5]["@href"] + '">' + d.menustrip.menu[1].menu[5]["@text"] + '</li>' +
+          '<li><a href="' + d.menustrip.menu[1].menu[6]["@href"] + '">' + d.menustrip.menu[1].menu[6]["@text"] + '</li>' +
+        '</ul>' +
+        '<li>' + d.menustrip.menu[2]["@text"] + '</li>' +
+        '<ul>' +
+          '<li><a href="' + d.menustrip.menu[2].menu[0]["@href"] + '">' + d.menustrip.menu[2].menu[0]["@text"] + '</li>' +
+          '<li><a href="' + d.menustrip.menu[2].menu[1]["@href"] + '">' + d.menustrip.menu[2].menu[1]["@text"] + '</li>' +
+          '<li><a href="' + d.menustrip.menu[2].menu[2]["@href"] + '">' + d.menustrip.menu[2].menu[2]["@text"] + '</li>' +
+        '</ul>' +
+        '<li>' + d.menustrip.menu[3]["@text"] + '</li>'
       );
     },
     error: function(error, error1, error2) {
