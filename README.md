@@ -1,4 +1,4 @@
-# Code Examples ![](http://img.shields.io/badge/docs-half-yellow.svg?style=flat) 
+# Code Examples ![](http://img.shields.io/badge/docs-half-yellow.svg?style=flat)
 These are the code examples for the projects I am working on
 
 ## Installing
