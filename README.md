@@ -56,7 +56,7 @@ if( isMobile.any() ) {
 For the client detection what we do is try and find out the clients useragent and cross checks it with; android, blackberry, iOS, opera, and windows phone.
 The variable is isMobile, isMobile.any checks all of them and isMobile.<useragent> is just the <useragent>
 
-### Soloutions
+## Soloutions
 
 ![](http://img.shields.io/badge/drag%20and%20drop-half-yellow.svg?style=flat)
 
